@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-10`}
       >
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
@@ -15,18 +15,25 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Gabriel</span>
+            Hi, I'm <span className='text-[#915EFF]'>Roy Dabush</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className='sm:block hidden' />
+            I'm a 3D modeler, user <br className='sm:block hidden' />
             interfaces and web applications
           </p>
         </div>
       </div>
 
+      <div className='absolute top-[420px] w-full flex right-[10%] justify-end z-[5]'>
+        <p className="max-w-[150px] text-center bg-[rgb(145,94,255,0.7)] rounded-full py-2 px-4 text-[12px] shadow-md shadow-[0,0,0,0.5]">
+          I'm a 3D object, you can rotate me
+        </p>
+      </div>
+      
       <ComputersCanvas />
 
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+
+      <div className='absolute xs:bottom-10 bottom-32 lg:bottom-0 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div

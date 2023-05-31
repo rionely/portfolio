@@ -43,9 +43,9 @@ const ExperienceCard = ({ experience }) => (
 const Experience = () => {
   return (
     <section>
-      <motion.div variants={textVariant}>
+      <motion.div variants={textVariant} className="justify-center items-center text-center">
         <p className={styles.sectionSubText}>What I have  done so far</p>
-        <h2 className={styles.sectionHeadText}>Work Experience.</h2>
+        <h2 className={styles.sectionHeadText}>Experience.</h2>
       </motion.div>
 
       <div className="mt-20 flex flex-col">
